@@ -112,9 +112,9 @@
 
     var progress = function (content, percent, targetPercent, waitMillisecond) {
 
-        if (isMobileApp()) {
+      
             return;
-        }
+        
 
         var showPercent = function (p, waitingTimes) {
             $("#div_loader_progress_percent").css("right", (100 - p) + "%");
