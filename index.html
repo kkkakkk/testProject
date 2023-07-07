@@ -289,14 +289,14 @@
 
 
             //如果是被嵌入在移动app中，那么调用webViewInterface函数
-            if (true) {
+            
                 if (window['webViewInterface'] !== undefined && window['webViewInterface']['loaded'] !== undefined) {
                     try {
                         webViewInterface.loaded();
                     } catch (ignore) {
                     }
                 }
-            }
+            
 
             setTimeout(switchView, 0);
 
